@@ -1,4 +1,4 @@
-podstawy gita(ra siema)
+podstawy gita
 #######################
 
 repozytorium zawiera material do cwiczen
