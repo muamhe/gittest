@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-20T07:23:18+01:00
+
+====== tld ======
+Created piątek 20 styczeń 2017
+
+Domena najwyższego poziomu (ang. TLD – Top-Level Domain) – domena internetowa, powyżej której nie istnieją żadne inne domeny w systemie DNS. Są one tworzone i zarządzane przez IANA i ICANN.
+
+Każda domena w Internecie składa się z pewnej liczby nazw, oddzielonych kropkami. Ostatnia z tych nazw jest domeną najwyższego poziomu. Na przykład w "pl.wikipedia.org" domeną najwyższego poziomu jest "org".
+
+Domeny najwyższego poziomu są używane w protokole DNS zamieniającym nazwy komputerów na ich adresy IP.
+
+Istnieją 2 typy domen najwyższego poziomu:
+
+	krajowe (ang. ccTLD – country code TLD) – zawsze dwuliterowe np. Polska – .pl
+	funkcjonalne (ang. gTLD – generic TLD) np. .org, .biz, .info

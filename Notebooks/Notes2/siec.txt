@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-13T07:14:26+01:00
+
+====== siec ======
+Created piątek 13 styczeń 2017
+
+SIEC LOKALNA
+-lan-siec lokalnaSieć lokalna (ang. LAN – Local Area Network) – sieć komputerowa łącząca komputery na określonym obszarze takim jak blok, szkoła, laboratorium, czy też biuro. 
+
+-topologia magistrali.Topologia magistrali (topologia szynowa, ang. bus) – jedna z topologii fizycznych sieci komputerowych charakteryzująca się tym, że wszystkie elementy sieci są podłączone do jednej magistrali (zazwyczaj w postaci kabla koncentrycznego). W tej topologii pracują na przykład sieci 10Base-2 czy NMEA 2000. kiedys
+
+-topologia gwiazdy.Topologia gwiazdy (ang. star network) – sposób połączenia komputerów w sieci komputerowej, charakteryzujący się tym, że kable sieciowe połączone są w jednym wspólnym punkcie, zwanym punktem dostępu (ang. access point), w którym znajduje się koncentrator lub przełącznik. role centrum pelni hab, do ktorego sie podpina komputery. dzisiaj. haby zostaly zastapione switchami, jezeli zostanie uszkodzony jeden kabel to nie laczy jedno urzdzenie
+
+-host to komputery rownorzedne
+-serwery to komputery, ktore udostepniaja jakies uslugi
+-hosty sa klientami serweru(klient=>serwer)
+
+*router to urzadzenie, ktore laczy sieci
+-man(miejska siec komputerowa)sklada sie z kilkunastu lanow polaczonych routerem
+
+wan(wide area network) rozlegla siec komputerowa(zazwyczaj krajowa,kontynentalna)
+polaczenie twgo wszystkiego daje internet
+(siec sieci) szkielet jest zrobiony ze swiatlowodow
+
+ethernet-technologia laczenia komputerow,technika, w której zawarte są standardy wykorzystywane w budowie głównie lokalnych sieci komputerowych. Obejmuje ona specyfikację przewodów oraz przesyłanych nimi sygnałów. Ethernet opisuje również format ramek i protokoły z dwóch najniższych warstw Modelu OSI.
+
+-wi fi- polaczenie radiowe,potoczne określenie zestawu standardów stworzonych do budowy bezprzewodowych sieci komputerowych. Szczególnym zastosowaniem Wi-Fi jest budowanie sieci lokalnych (LAN) opartych na komunikacji radiowej, czyli WLAN.
+
+model osi iso 7 warstw jak cebula
+-warstwa aplikacji(firefox)
+-warstwa prezentacji(jakies obrazki,prezentowanie strony internetowej)
+-warstwa sesji(jakies polaczenie, okres uzytkowania)
+-warstwa transportowa(przesyl danych(kapsulkowanie-))
+-warstwa sieciowa
+-warstwa laczenia danych
+-warstwa fizyczna

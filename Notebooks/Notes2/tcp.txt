@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-18T12:50:48+01:00
+
+====== tcp ======
+Created środa 18 styczeń 2017
+
+Transmission Control Protocol (TCP) – połączeniowy, niezawodny, strumieniowy protokół komunikacyjny wykorzystywany do przesyłania danych pomiędzy procesami uruchomionymi na różnych maszynach, będący częścią szeroko wykorzystywanego obecnie stosu TCP/IP – korzysta z usług protokołu IP do wysyłania i odbierania danych ...
+wymaga calosci!!!!!!!!

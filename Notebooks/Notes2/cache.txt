@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-20T07:32:54+01:00
+
+====== cache ======
+Created piątek 20 styczeń 2017
+
+Pamięć podręczna (ang. cache) – mechanizm, w którym część spośród danych zgromadzonych w źródłach o długim czasie dostępu i niższej przepustowości jest dodatkowo przechowywana w pamięci o lepszych parametrach. Ma to na celu poprawę szybkości dostępu do tych informacji, które przypuszczalnie będą potrzebne w najbliższej przyszłości.
+
+Pamięć podręczna jest elementem właściwie wszystkich systemów – współczesny procesor ma 2 albo 3 poziomy pamięci podręcznej oddzielającej go od pamięci RAM. Dostęp do dysku jest buforowany w pamięci RAM, a dokumenty HTTP są buforowane przez pośredniki HTTP oraz przez przeglądarkę.

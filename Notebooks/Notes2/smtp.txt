@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-18T12:32:03+01:00
+
+====== smtp ======
+Created środa 18 styczeń 2017
+
+SMTP (ang. Simple Mail Transfer Protocol) – protokół komunikacyjny opisujący sposób przekazywania poczty elektronicznej w Internecie. Standard został zdefiniowany w dokumencie RFC 821 ↓, a następnie zaktualizowany w 2008 roku w dokumencie RFC 5321 ↓.

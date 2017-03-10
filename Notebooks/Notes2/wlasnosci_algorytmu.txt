@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-11T12:06:40+01:00
+
+====== wlasnosci algorytmu ======
+Created środa 11 styczeń 2017
+-poprawnosc 
+
+-skonczonosc
+
+-zlozonosc
+
+-efektywnosc

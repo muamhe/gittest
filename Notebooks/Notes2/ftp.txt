@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-18T12:26:14+01:00
+
+====== ftp ======
+Created środa 18 styczeń 2017
+
+FTP, protokół transferu plików (ang. File Transfer Protocol) – protokół komunikacyjny typu klient-serwer wykorzystujący protokół TCP według modelu TCP/IP (krótko: połączenie TCP), umożliwiający dwukierunkowy transfer plików w układzie serwer FTP–klient FTP.

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-18T12:32:45+01:00
+
+====== ssl ======
+Created środa 18 styczeń 2017
+
+

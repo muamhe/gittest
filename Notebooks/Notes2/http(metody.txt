@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-18T12:20:38+01:00
+
+====== http(metody ======
+Created środa 18 styczeń 2017
+
+port 80

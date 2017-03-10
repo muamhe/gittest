@@ -1,0 +1,190 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-01-15T10:09:30+01:00
+
+====== Home ======
+Created czwartek 15 styczeń 2015
+
+123(8)= 1 * 8^2 + 2* 8^1 + 3* 8^1
+1AF(16) = 1* 16^2  + A* 16^1 + F *16^0 = 431
+8 bit = bajt
+1024 bajt = kilobajt
+1024 = kilobajt = megabajt
+
+
+10010111(2) = 1 * 2^7 + 1 * 2 ^ 4 + 1 * 2^2 + 1* 2^1 + 1* 2^0= 120 + 0 +0 + 16 + 0 + 4 + 2 + 1 = 151(10)
+10100110
+128 64 32 16 8 4 2 1
+128 + 32 + 4 + 2= 168
+
+1465(10) % 2 = 1
+732 %2 = 0
+366 % 2 = 0
+183 % 2 = 1
+91 % 2 = 1
+45 % 2 = 1
+22 % 2 = 0
+11 % 2 = 1
+5 % 2 = 1
+2 % 2 = 0
+1(10) % 2 = 1
+1465(10) = 10110111001(2)
+
+653(10) % 2 = 1
+326(10) % 2 = 0 
+163 (10) % 2 = 1 
+81 (10) % 2 = 1
+40 (10) % 2 = 0
+20 (10) % 2 = 0
+10 (10) % 2 = 0
+5(10) % 2 = 1
+2(10) % 2 = 0
+1(10)% 2 = 1
+
+653(10) = 1010001101 (2) 
+10100000
+00100D
+28D
+
+10101011001(2)= 
+5B9(16)
+
+C9A(16) = 
+110010011010(2)
+
+
+1286(10) % 8 = 6
+160(10) % 8 = 0
+20(10)  % 8 = 4 
+2 (10) % 8 = 2
+
+1286(10) % 16 = 6
+80 (10) % 16 = 0
+5(10) % 16 = 5
+
+
+GABRIELA RUSAK
+--..--....-.....-...-
+KROPKI 14
+KRESKI 7
+
+
+
+"Moją pasją są kompresje i ich komputerowe wersje."
+
+Moją pas<6,3> s<9,2> kompresje i ich <13,4> uterowe <3,3>r<23,4>
+
+
+**ZAPIS UZUPEŁNIENIOWY DO DWOCH**
+
+* a' = a dla a>= 0
+* a' = 2^n+a dla liczb ujemnych 
+
+(a')11111111 = 255
+a= - 30 n=8 ilosc bitow do zapisu cyfry
+a'= 2^8 + (-30)= 256-30 = 226(10)
+226(10) = 11100010(2)
+226 +  26 = 111100010(2) + 110010(2) = 11111100(2) = 252
+-30 + 26 = -4
+-4 = 2^8 -4 = 251
+
+
+
+**ZAPIS LICZBY STAŁOPOZYCYJNEJ** 
+
+6,6875 > 2^2(4) 2,6875 1
+2,6875> 2^1(2) 0,6875 1
+0,6875 > 2^0 (1) 0,6875 0
+0,6875 > 2^-1 (0,5) 0,1875 1
+0,1875 > 2^-2 (0,25) 0,1875 0
+0,1875 > 2^-3 (0,125) 0,0625 1
+0,0625 > 2^-4 (0,0625) 01
+6,6875(10) = 110,10101
+
+
+
+**KOMPUTER I SYTEMY OPERACYJNE**
+
+BiOS -basic input output system / na plycie glownej (MOTHERBOARD) --> hdd (system operacyjny )
+
+System operacyjny  
+*ładuje moduł jądra(KERNEL) 
+*ROZPOZNANIE SPRZĘTU
+*Wczytanie sterowników(driver)
+
+
+TERMINAL (system dos, linux)
+r-4
+w-2
+x-1
+
+**SIEĆ**
+
+klient sieci - komputer, ktory rząda i  pobiera 
+eternet - kabel łączący, dane przesylane poprtzez spadek i wzrost napiecia, w tym samym momencie moga nadawac i odbierac
+serwer -  komputer, ktory udostepnia 
+usługa sieciowa - udostępnianie plików ( protoków SMB - samba implementacja miscrosftowskiego protokolu smb, serwer FTP (sciaganie protokołow )
+sieć lokalna - ograniczenie w obrebie danego budynku, wymienianie pakietów/ skazana na kolizje pakietów / hosty podpiete do switcha tworza sec lokalna
+
+
+nic network interface connection  (karta sieciowa z gniazdem eternetowym)
+k1 szeregowo k2 szeregowo k3
+
+
+host - urzadzenie polączone (urzadzenie centralne, do ktorego podlaczane sa komputery) - topologia gwiazdy/ w razie uszkodzenia polaczenia. komunikacje sieciowa zaklocona jest tylko miedzy jednym urzadzeniem a urzadzeniem centralnym
+
+hub- koncentrator, przekazuje sygnal z jednego hostu na inne
+
+switch - przełącznik \ nie tylko replikacja sygnalu, ale replikuje sygnal do portu komputera konkretnego, do ktorego podłączony jest serwer
+
+sciec lokalna skazana na kolizje 
+
+protokół IP- 
+adres IP - unikalne oznaczenie numeryczne komputera lub dowolnego urządzenia sieciowego w sieci lokalnej, kazda z licz miesci sie w zakresie od 0 -255 czyli 8 bitow , 1bajt, w jednej sieci maja pewna czesc wspolna adresu - adres sieci 
+
+lo [[/']] loopback - petla zwrotna, interfejs pod ktorym komputer widzi samego siebie, 127.0.0.1
+
+warstwa aplikacji - interfejs inicjujacy inforemacje, przekazuje je i odbiera
+
+protokol komunikacyjny - zasadsa przesylania informacji na poszczegolnych poziomach
+
+MAC - adres  
+1. rpzgloszeniowy : 
+2. 2. ,etoda zabezpiecenia przy routerach WLAN
+powiazanie mac z ip - mac przyporzadkowac adres ip   
+
+filtrowanie adr MAC - access list, forma zabezpieczeń, definiowanie list dostepu do adresu wifi 
+
+protokuł dhcp- nadawanie automatycznie komputerom adresu IP
+
+komunikat rozgłoszeniowy - komunikat broadcast - komunikacja komp w sieci lokalnej 
+
+adresy ip:
+* lokalne 
+
+adres sieci - najnizszy adres 192.168.0.0 192.168.0.255 - do kazdej sieci (255)
+192.168.01 => 254
+mozna podzielic na podsieci, maska sieciowa - [[/24]] w jakiej podsieci jest kompouter, ilosc jedynek w adresie ip 255,255,255,0
+ile poswieconych na adr ip ile na adr hostów.
+ adres publiczny- komputery widziane w interneci (ping wp.pl) 
+
+networ adrs transl - proces translacji adresow zamiana lokalnych z rutera wifi, na adres publiczny, jeden adres p, przyzielony od dostawcy internetowego .
+enkapsulacja - zamykanie dancy h w kolejncyh paczkach 
+
+protokol dns - 
+serwery dns- rozproszona nazswa danych kojarzaca nazwy domenhowe i ip, znajduja sie baza danych z nazwa domeny i ip 
+ default - numer po; zapytania do komputera na jaki adres / domyslna droga
+
+tracepath- ma swiat
+traceroute - polska
+nslookup
+ping
+netstat -  czy jakis rpgram nie nawiazuje polaczenia z innymi serwerami
+
+gniazdo - ip polaczone z usługa 
+ 
+
+
+
+
+

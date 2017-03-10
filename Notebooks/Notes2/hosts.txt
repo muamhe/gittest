@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-20T07:39:31+01:00
+
+====== hosts ======
+Created piątek 20 styczeń 2017
+
+Plik hosts – plik konfiguracyjny systemu operacyjnego służący do sztywnego mapowania nazw domenowych na adresy IP.
+
+Plik hosts jest jednym z modułów wielu systemów operacyjnych, który wspomaga adresowanie w sieciach komputerowych. Jego zadaniem jest tłumaczenie przyjaznych użytkownikom nazw domenowych na ich numeryczne odpowiedniki, zwane adresami IP, które identyfikują dany komputer w sieci.
+
+Plik hosts jest plikiem tekstowym zawierającym w każdej linii adres IP i jedną lub więcej nazw domenowych danego hosta (oddzielone od siebie spacjami lub tabulatorami). Linie rozpoczynające się znakiem hash są komentarzami (a więc są ignorowane).
+
+Uwaga! W systemach Windows liczba nazw domenowych wymienionych w jednej linii jest ograniczona do 9.
+
+Typowy plik hosts może wyglądać następująco:
+
+# Komentarz do pliku hosts (np. opis budowy pliku)
+127.0.0.1  localhost loopback
+::1        localhost

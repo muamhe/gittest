@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-18T12:48:38+01:00
+
+====== pop3 ======
+Created środa 18 styczeń 2017
+
+POP3[edytuj] Post Office Protocol (POP) – protokół internetowy z warstwy aplikacji pozwalający na odbiór poczty elektronicznej ze zdalnego serwera do lokalnego komputera poprzez połączenie TCP/IP.

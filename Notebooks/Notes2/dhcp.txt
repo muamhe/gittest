@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-20T07:49:41+01:00
+
+====== dhcp ======
+Created piątek 20 styczeń 2017
+DHCP (ang. Dynamic Host Configuration Protocol – protokół dynamicznego konfigurowania hostów) – protokół komunikacyjny umożliwiający hostom uzyskanie od serwera danych konfiguracyjnych, np. adresu IP hosta, adresu IP bramy sieciowej, adresu serwera DNS, maski podsieci. Protokół DHCP jest zdefiniowany w RFC 2131 ↓ i jest następcą BOOTP. DHCP został opublikowany jako standard w roku 1993.
+
+W kolejnej generacji protokołu IP, czyli IPv6, jako integralną część dodano nową wersję DHCP, czyli DHCPv6. Jego specyfikacja została opisana w RFC 3315 ↓.
+
+W sieci opartej na protokole TCP/IP każdy komputer ma co najmniej jeden adres IP i jedną maskę podsieci; dzięki temu może się komunikować z innymi urządzeniami w sieci.
+
+ip
+brama sieciowa
+dns
+maska podsieci

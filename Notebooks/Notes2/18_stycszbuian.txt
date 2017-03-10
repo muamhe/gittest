@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-18T11:56:37+01:00
+
+====== 18 stycszbuian ======
+Created środa 18 styczeń 2017
+
+do modelu osi
+przechodzenie przez warstwy jest nazywane kapsulkowaniem
+segmenty, nizej pakiety, potem ramka-nazwy przesylanych danych w sieci
+
+-warstwa aplikacji
+Warstwa aplikacji jest warstwą najwyższą, zajmuje się specyfikacją interfejsu, który wykorzystują aplikacje do przesyłania danych do sieci (poprzez kolejne warstwy modelu ISO/OSI). W przypadku sieci komputerowych aplikacje są zwykle procesami uruchomionymi na odległych hostach. Interfejs udostępniający programistom usługi dostarczane przez warstwę aplikacji opiera się na obiektach nazywanych gniazdami (ang. socket).
+protokoly: [[http(metody:get-gdy]] chcemy cos przegladac, post-gdy my wysylamy dane na serwer,
+-prezentecji
+-sesji

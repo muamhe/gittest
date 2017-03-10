@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-18T12:57:07+01:00
+
+====== ipv4 ======
+Created środa 18 styczeń 2017
+
+IPv4 (ang. Internet Protocol version 4) – czwarta wersja protokołu komunikacyjnego IP przeznaczonego dla Internetu. Identyfikacja hostów w IPv4 opiera się na adresach IP. Dane przesyłane są w postaci standardowych datagramów. Wykorzystanie IPv4 jest możliwe niezależnie od technologii łączącej urządzenia sieciowe – sieć telefoniczna, kablowa, radiowa, itp. IPv4 znajduje się obecnie w powszechnym użyciu. Dostępna jest również nowsza wersja – IPv6. Dokładny opis czwartej wersji protokołu IP znajduje się w RFC 791 ↓. W modelu TCP/IP protokół IPv4 znajduje się w warstwie sieciowej.
+
+dziela sie na klasy 
+z koncowka 255 stanowi wszystkie komputery
+maska sieciowa bywa odkreslana maska podsieci ilie bitow jest przeznaczone na adres sieci
+
