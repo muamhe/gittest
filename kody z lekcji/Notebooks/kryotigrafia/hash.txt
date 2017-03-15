@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-15T12:31:59+01:00
+
+====== hash ======
+Created środa 15 marzec 2017
+
+sha1 dlugosc 40 znakow szestnastkowy
+
+sha256 dlugosc 64(najdluzszy)

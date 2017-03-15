@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-15T12:07:13+01:00
+
+====== Kryptografia klucza publicznego ======
+Created środa 15 marzec 2017
+
+publiczny moze byc ujawniony wszystkim, a prywatny tylko dla danych osob
+
+Ponieważ kryptografia asymetryczna jest o wiele wolniejsza od symetrycznej, prawie nigdy nie szyfruje się wiadomości za pomocą kryptosystemów asymetrycznych. Zamiast tego szyfruje się jedynie klucz jakiegoś szyfru symetrycznego, takiego jak np. AES. Takie protokoły, łączące elementy kryptografii symetrycznej i asymetrycznej, nazywa się hybrydowymi.
+
+klucze sa zsyfrowane funkcja skrot
