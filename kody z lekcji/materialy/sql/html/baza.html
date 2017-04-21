@@ -1,0 +1,17 @@
+<p>Wprowadź poprawne polecenie SQL typu SELECT, INSERT, UPDATE lub DELETE.</p>
+<?php
+	if (isset($_POST['sqlstr'])) {
+		$qstr = trim($_POST['sqlstr']);
+		echo '<p>Wprowadzono:<br /><code>'.$qstr.'</code></p>';
+		
+		$ret=null;
+		db_query($qstr,$ret);
+		var_dump($ret);
+	}
+?>
+<form method="post" id="sqlfrm" name="sqlfrm" action="?id=<?php echo $id; ?>">
+	<p>Polecenie SQL:</p>
+	<textarea rows="5" cols="60" name="sqlstr"></textarea>
+	<br />
+	<input type="submit" value="Zapisz" />
+</form>

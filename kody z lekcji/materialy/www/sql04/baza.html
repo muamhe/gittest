@@ -1,0 +1,31 @@
+<p>Wprowadź poprawne polecenie SQL typu SELECT.</p>
+<?php
+	if (isset($_POST['sqlstr'])) {
+		$qstr=trim($_POST['sqlstr']);
+		echo '<p>Wprowadzono:<br /><code>'.$_POST['sqlstr'].'</code><p>';
+		//var_dump(db_exec($qstr));
+		$ret=null;
+		db_query($qstr,$ret);
+		//var_dump($ret);
+		echo '<table class="tbret">';
+		foreach ($ret as $i => $tb) {
+			if ($i%2 == 0) echo '<tr class="odd">'; else echo '<tr>';
+			echo '<td>'.$i.'</td>';
+			foreach ($tb as $pole) {
+				echo '<td>'.$pole.'</td>';
+			}
+			echo '</tr>';
+		}
+		echo '</table>';
+	} else {
+?>
+<form action="?id=<?php echo $id; ?>" method="post" id="sqlfrm" name="sqlfrm">
+	<input type="hidden" name="acc3" value="" />
+	<p>Polecenie SQL:</p>
+	<textarea name="sqlstr" rows="5" cols="60"></textarea>
+	<br />
+	<input class="cb but flr" type="submit" value="Zapisz" />
+</form>
+<?php
+	}
+?>

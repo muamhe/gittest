@@ -1,0 +1,3 @@
+Dokumenty finansowe
+
+Dokumenty typu faktura, czek umo¿liwiaj¹ce ¿¹danie wyp³aty od wskazanego wierzyciela. 

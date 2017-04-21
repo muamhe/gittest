@@ -1,0 +1,257 @@
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=ISO-8859-2">
+		<link href="../egzamin.css" rel="Stylesheet" type="text/css">
+			<title>Wirtualne zakupy - księgarnia ECDL (egzamin)</title>
+		<script language="javascript">
+	
+	var m = new Array(7);
+	function testuj(){
+		m[1]=document.formatka1.MOD_1.value;
+		m[2]=document.formatka1.MOD_2.value;
+		m[3]=document.formatka1.MOD_3.value;
+		m[4]=document.formatka1.MOD_4.value;
+		m[5]=document.formatka1.MOD_5.value;
+		m[6]=document.formatka1.MOD_6.value;
+		m[7]=document.formatka1.MOD_7.value;
+		PL=" ";
+		if(document.formatka1.PLATNOSC[0].checked) PL="PRZELEW";
+		if(document.formatka1.PLATNOSC[1].checked) PL="POBRANIE";
+		if(document.formatka1.PLATNOSC[2].checked) PL="KARTA";
+		KA=document.formatka1.KARTA.value;
+		RA=" ";
+		if(document.formatka1.RABAT[0].checked) RA="10";
+		if(document.formatka1.RABAT[1].checked) RA="25";
+		
+
+                ++document.formatka1.MOD_A.value;   /* zlicza iloć wcinięć klawisza zamawiam */
+
+		var zam=m[1]+m[2]+m[3]+m[4]+m[5]+m[6]+m[7];
+
+//	document.formatka1.MOD_A.value = zam;  /* dla testów */
+
+		KOD="K0000"
+		if ( (zam=="3010002") && (PL == "POBRANIE") && (RA == "25")) KOD="K0010";
+		if ( (zam=="0201020") && (PL == "POBRANIE") && (RA == "25")) KOD="K0020";
+		if ( (zam=="0110002") && (PL == "KARTA") && (KA == "1111222233334444") && (RA == "25"))	KOD="K0030";
+		if ( (zam=="3000110") && (PL == "KARTA") && (KA == "1111222233334444") && (RA == "25"))	KOD="K0040";
+		if ( (zam=="0011200") && (PL == "KARTA") && (KA == "1111222233334444") && (RA == "25"))	KOD="K0050";
+		if ( (zam=="0200011") && (PL == "POBRANIE") && (RA == "25")) KOD="K0060";
+		if ( (zam=="0031001") && (PL== "PRZELEW") && (RA == "25")) KOD="K0070";
+		if ( (zam=="2210000") && (PL== "PRZELEW") && (RA == "25")) KOD="K0080";
+		if ( (zam=="0012010") && (PL== "PRZELEW") && (RA== "25")) KOD="K0090";
+		if ( (zam=="0000221") && (PL== "KARTA") && (KA == "1111222233334444") && (RA == "25")) KOD="K0100";
+		
+				
+		var rnd = Math.round(Math.random()*25);
+		ciag="qwertyuiopasdfghjklzxcvbnm";
+		K1=ciag.charAt(rnd);
+		for (i=1;i<=7;i++){
+		rnd = Math.round(Math.random()*25);
+		rnd2 = Math.round(Math.random()*25);
+		K1=K1+i+ciag.charAt(rnd2)+"0"+m[i]+ciag.charAt(rnd);
+		}
+		rnd = Math.round(Math.random()*25);
+		K1=K1+"z"+KOD+"-"+ciag.charAt(rnd);
+		K2=Math.round(Math.random()*999);
+	//	K1=K1+K2;
+		K1=K1+document.formatka1.MOD_A.value;
+		document.formatka1.KOD.value=K1;
+	
+		
+	}
+		
+			</script>
+	</head>
+	<body>
+		<br>
+		<br>
+		<center><h1>Księgarnia internetowa <br> <i>"Egzamin ECDL"</i></h1>
+			<h3>Formularz zamówienia</h3>
+		</center>
+		<br>
+		<FORM name="formatka1">
+			<TABLE BORDER="0" CELLSPACING="10" CELLPADDING="1">
+				<TR VALIGN="top">
+					<TD ALIGN="Right">
+						<SPAN class="ver10">Tytuł i autor książki</SPAN>
+					</TD>
+					<TD ALIGN="CENTER" WIDTH="21%">Informacje o produkcie</TD>
+					<TD NOWRAP ALIGN="RIGHT" WIDTH="15%">Cena brutto</TD>
+					<TD ALIGN="CENTER" WIDTH="21%">Liczba zamawianych egzemplarzy
+					</TD>
+				</TR>
+				<!-- Moduł 1 -->
+				<TR VALIGN="top">
+					<TD ALIGN="Right">
+						<span class="ver10">
+							<b>Podstawy technik informatycznych</b><br>
+							<i>Witold Sikorski</i></span>
+					</TD>
+					<TD ALIGN="CENTER">
+						<A HREF="produkty/modul_1.html"><IMG SRC="img/camera.gif" ALT="Zobacz produkt" BORDER="0"></A>
+					</TD>
+					<TD NOWRAP ALIGN="RIGHT">
+						<SPAN class="ver10">9.10 zł/szt.</SPAN>
+						<INPUT type="hidden" name="MOD_1_CENA" value="9.10"> <INPUT type="hidden" name="MOD_1_NAZWA" value="Podstawy technik informatycznych">
+					</TD>
+					<TD ALIGN="CENTER"><INPUT TYPE="text" NAME="MOD_1" VALUE="0" SIZE="2" maxlength="2"></TD>
+				</TR>
+				<!-- Moduł 2-->
+				<TR VALIGN="top">
+					<TD ALIGN="Right">
+						<SPAN class="ver10">
+							<b>Użytkowanie komputerów<br>
+							</b><i>Zdzisław Nowakowski</i></SPAN>
+					</TD>
+					<TD ALIGN="CENTER">
+						<A HREF="produkty/modul_2.html"><IMG SRC="img/camera.gif" ALT="Zobacz produkt" BORDER="0"></A>
+					</TD>
+					<TD NOWRAP ALIGN="RIGHT">
+						<SPAN class="ver10">9.20 zł/szt.</SPAN>
+						<INPUT type="hidden" name="MOD_2_CENA" value="9.20"> <INPUT type="hidden" name="MOD_2_NAZWA" value="Użytkowanie komputerów">
+					</TD>
+					<TD ALIGN="CENTER"><INPUT TYPE="text" NAME="MOD_2" VALUE="0" SIZE="2" maxlength="2"></TD>
+				</TR>
+				<!-- Moduł 3-->
+				<TR VALIGN="top">
+					<TD ALIGN="Right">
+						<SPAN class="ver10">
+							<b>Przetwarzanie tekstów<br>
+							</b><i>Mirosława Kopertowska</i></SPAN>
+					</TD>
+					<TD ALIGN="CENTER">
+						<A HREF="produkty/modul_3.html"><IMG SRC="img/camera.gif" ALT="Zobacz produkt" BORDER="0"></A>
+					</TD>
+					<TD NOWRAP ALIGN="RIGHT">
+						<SPAN class="ver10">9.30 zł/szt.</SPAN>
+						<INPUT type="hidden" name="MOD_3_CENA" value="9.30"> <INPUT type="hidden" name="MOD_3_NAZWA" value="Przetwarzanie tekstów">
+					</TD>
+					<TD ALIGN="CENTER">
+						<INPUT TYPE="text" NAME="MOD_3" VALUE="0" SIZE="2" maxlength="2">
+					</TD>
+				</TR>
+				<!-- Moduł 4-->
+				<TR VALIGN="top">
+					<TD ALIGN="Right">
+						<SPAN class="ver10">
+							<b>Arkusze kalkulacyjne<br>
+							</b><i>Mirosława Kopertowska</i></SPAN>
+					</TD>
+					<TD ALIGN="CENTER">
+						<A HREF="produkty/modul_4.html"><IMG SRC="img/camera.gif" ALT="Zobacz produkt" BORDER="0"></A>
+					</TD>
+					<TD NOWRAP ALIGN="RIGHT">
+						<SPAN class="ver10">9.40 zł/szt.</SPAN>
+						<INPUT type="hidden" name="MOD_4_CENA" value="9.40"> <INPUT type="hidden" name="MOD_4_NAZWA" value="Arkusze kalkulacyjne">
+					</TD>
+					<TD ALIGN="CENTER"><INPUT TYPE="text" NAME="MOD_4" VALUE="0" SIZE="2" maxlength="2"></TD>
+				</TR>
+				<!-- Moduł 5-->
+				<TR VALIGN="top">
+					<TD ALIGN="Right">
+						<SPAN class="ver10">
+							<b>Bazy danych<br>
+							</b><i>Mirosława Kopertowska</i></SPAN>
+					</TD>
+					<TD ALIGN="CENTER">
+						<A HREF="produkty/modul_5.html"><IMG SRC="img/camera.gif" ALT="Zobacz produkt" BORDER="0"></A>
+					</TD>
+					<TD NOWRAP ALIGN="RIGHT">
+						<SPAN class="ver10">9.50 zł/szt.</SPAN>
+						<INPUT type="hidden" name="MOD_5_CENA" value="9.50"> <INPUT type="hidden" name="MOD_5_NAZWA" value="Bazy danych">
+					</TD>
+					<TD ALIGN="CENTER"><INPUT TYPE="text" NAME="MOD_5" VALUE="0" SIZE="2" maxlength="2"></TD>
+				</TR>
+				<!-- Moduł 6-->
+				<TR VALIGN="top">
+					<TD ALIGN="Right">
+						<SPAN class="ver10">
+							<b>Grafika menedżerska i prezentacyjna<br>
+							</b><i>Mirosława Kopertowska</i></SPAN>
+					</TD>
+					<TD ALIGN="CENTER">
+						<A HREF="produkty/modul_6.html"><IMG SRC="img/camera.gif" ALT="Zobacz produkt" BORDER="0"></A>
+					</TD>
+					<TD NOWRAP ALIGN="RIGHT">
+						<SPAN class="ver10">9.60 zł/szt.</SPAN>
+						<INPUT type="hidden" name="MOD_6_CENA" value="9.60"> <INPUT type="hidden" name="MOD_6_NAZWA" value="Grafika menedżerska i prezentacyjna">
+					</TD>
+					<TD ALIGN="CENTER"><INPUT TYPE="text" NAME="MOD_6" VALUE="0" SIZE="2" maxlength="2"></TD>
+				</TR>
+				<!-- Moduł 7-->
+				<TR VALIGN="top">
+					<TD ALIGN="Right">
+						<SPAN class="ver10">
+							<b>Usługi w sieciach informatycznych<br>
+							</b><i>Adam Wojciechowski</i></SPAN>
+					</TD>
+					<TD ALIGN="CENTER">
+						<A HREF="produkty/modul_7.html"><IMG SRC="img/camera.gif" ALT="Zobacz produkt" BORDER="0"></A>
+					</TD>
+					<TD NOWRAP ALIGN="RIGHT">
+						<SPAN class="ver10">9.70 zł/szt.</SPAN>
+						<INPUT type="hidden" name="MOD_7_CENA" value="9.70"> <INPUT type="hidden" name="MOD_7_NAZWA" value="Usługi w sieciach informatycznych">
+					</TD>
+					<TD ALIGN="CENTER"><INPUT TYPE="text" NAME="MOD_7" VALUE="0" SIZE="2" maxlength="2"></TD>
+				</TR>
+				<!-- Informacje o zamawiającym-->
+				<TR VALIGN="top">
+					<TD ALIGN="center" colspan="4"><HR>
+					</TD>
+				</TR>
+				<TR VALIGN="top">
+					<TD ALIGN="Right"><SPAN class="ver10"><b>Imię i nazwisko zamawiającego</SPAN></TD>
+					<TD ALIGN="left" colspan="3"><INPUT type="text" name="NAZWISKO" size="60" maxlength="60"></TD>
+				</TR>
+				<TR VALIGN="top">
+					<TD ALIGN="Right"><SPAN class="ver10"><b>Adres</SPAN></TD>
+					<TD ALIGN="left" colspan="3"><INPUT type="text" name="ADRES" size="60" maxlength="160"></TD>
+				</TR>
+				<TR VALIGN="top">
+					<TD ALIGN="Right"><SPAN class="ver10"><b>Forma płatności</SPAN></TD>
+					<TD ALIGN="left" colspan="3">
+						<input type="radio" name="PLATNOSC" value="PRZELEW">Przedpłata przelewem<br>
+						<input type="radio" name="PLATNOSC" value="POBRANIE">Płatne gotówką przy 
+						odbiorze od kuriera<br>
+						<input type="radio" name="PLATNOSC" value="KARTA">Karta kredytowa; numer karty: <input type="text" size="20" name="KARTA" value="xxxx xxxx xxxx xxxx">
+					</TD>
+				</TR>
+				<TR VALIGN="top">
+					<TD ALIGN="Right"><SPAN class="ver10"><b>Rabat</SPAN></TD>
+					<TD ALIGN="left" colspan="3">
+						<input type="radio" name="RABAT" value="10">10% jestem nowym klientem<br>
+						<input type="radio" name="RABAT" value="25">25% posiadam kartę EKUK; nr karty: <input type="text" size="10" name="EKUK" value="PL-"><br>
+						
+					</TD>
+				</TR>
+				<TR VALIGN="top">
+					<TD ALIGN="center" colspan="4"><P align="center"><INPUT TYPE="button" NAME="test" VALUE="Zamawiam" onclick="testuj();">
+					</TD>
+				</TR>
+				<TR VALIGN="top">
+					<TD ALIGN="center" colspan="4">
+ <b> Numer potwierdzenia zamówienia: </b> <input type="text" size="70" name="KOD"><br>
+ 
+ <INPUT type="hidden" NAME="MOD_A" value=0>
+
+<HR>
+					</TD>
+
+
+
+
+
+
+				</TR>
+				<TR VALIGN="top">
+					<TD ALIGN="center" colspan="4">
+						<p><b>UWAGA!</b><br>
+							Formularz zamówienia stanowi element ćwiczenia egzaminacyjnego.<br>
+							Zamówienia składane na tej stronie <b>NIE SĄ REALIZOWANE!</b><br>
+					</TD>
+				</TR>
+			</TABLE>
+		</FORM>
+	</body>
+</html>

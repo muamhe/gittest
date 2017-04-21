@@ -1,0 +1,28 @@
+-- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * --
+---------------------- POCZ¥TEK ARKUSZA ----------------------
+
+ARKUSZ PREFERECJI UCZESTNIKA IMPERZY TURYSTYCZNEJ
+
+
+SYMBOL IMPREZY (1) [                      ]
+IMIÊ i NAZWISKO    [                      ]
+
+NOCLEG (2)      [ ] pokój 1-osobowy  [ ] pokój 2-osobowy
+WY¯YWIENIE (2)  [ ] dowolne          [ ] wegetariañskie
+TRANSPORT (2)   [ ] kolej            [ ] autobus-lux
+
+----------------------- KONIEC ARKUSZA -----------------------
+-- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * --
+
+Objaœnienie
+-----------
+(1) Symbol imprezy wg. oferty
+(2) Proszê wybraæ jedn¹ z opcji wpisuj¹c w nawiasie znak X.
+
+
+================================================================
+
+Niniejszy arkusz stanowi za³acznik do zadania egzaminacyjnego
+Europejskiego Certyfikatu Umiejêtnoœci Komputerowych, ECDL.
+
+(C) Polskie Towarzystwo Informatyczne

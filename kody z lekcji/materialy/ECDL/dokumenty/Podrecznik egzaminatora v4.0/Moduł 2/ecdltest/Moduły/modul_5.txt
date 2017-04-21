@@ -1,0 +1,2 @@
+Modu³ 5 -	
+Bazy danych  - od kandydata wymaga siê zrozumienia podstawowych zasad wykorzystania baz danych i zaprezentowania umiejêtnoœci pos³ugiwania siê programem do obs³ugi baz danych. Zdaj¹cy powinien umieæ tworzyæ i modyfikowaæ tabele, zapytania, formularze, raporty w postaci gotowej do rozpowszechniania. Kandydat musi umieæ tak¿e budowaæ relacje miêdzy tabelami, wybieraæ i przetwarzaæ informacje zawarte w bazie, u¿ywaj¹c zapytañ i funkcji sortowania dostêpnych w programie.

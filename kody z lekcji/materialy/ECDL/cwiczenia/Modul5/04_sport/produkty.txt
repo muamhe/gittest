@@ -1,0 +1,5 @@
+1          Tennis shoes                                      50,00 z³             Tennis                                            
+2          Boots                                             75,00 z³             Soccer                                            
+3          Baseball caps                                     15,00 z³             Baseball                                          
+4          Golf equipment                                    65,00 z³             Golf                                              
+5          Running machine                                   500,00 z³            Running                                           

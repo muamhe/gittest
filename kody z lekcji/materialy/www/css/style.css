@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+	background: url('imgs/tlo.gif');
+}
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:visited { text-decoration: none; }
+.wrapper {
+	width: 950px;
+	margin: 0 auto;
+	display: block;
+}
+.clearfix {
+	clear: both;
+}
+header { background-color: lightskyblue; }
+header nav { background-color: #ccc; padding: 1px 10px; font-size: 10pt; line-height: 1.5em; }
+article {
+	float: right;
+	width: 75%;
+}
+article section {
+	padding: 1px 20px 20px 20px;
+	font-size: 12pt;
+	line-height: 1.5em;
+	color: #000;
+	background-color: white;
+}
+h1 { font-size: 1.8em; font-weight: bold; margin-top: 20px;}
+
+aside {
+	float: left;
+	width: 25%;
+	background-color: #1E90FF;
+	color: white;
+}
+aside h2 {
+	font-size: 1.5em;
+	background-color: #87CEFA;
+	border-radius: 10px;
+	padding: 2px 10px;
+	margin: 12px 10px 5px;
+}
+.fr { float: right; }
+.tbret { border: 1px solid #eee; border-collapse: collapse; font-size: 12px; }
+.tbret td { border: 1px solid #eee; padding: 2px; }
+.odd { background-color: #eee; }

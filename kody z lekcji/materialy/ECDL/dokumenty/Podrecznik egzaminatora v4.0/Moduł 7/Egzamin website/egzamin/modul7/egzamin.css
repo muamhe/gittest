@@ -1,0 +1,68 @@
+body{
+        font-family:"Verdana";
+        font-size:12;
+        color:black;
+        background-color:#EFD6A0;
+        margin: "3 3 3 3";
+}
+
+.header_colour {
+        color:#80404F;
+        font-family:"Verdana";
+        font-size:20;
+        font-weight:bold;
+        font-style:none;
+}
+
+.header18 {
+        font-family:"Verdana";
+        font-size:18;
+        font-weight:bold;
+        font-style:none;
+}
+
+.header14 {
+        font-family:"Verdana";
+        font-size:14;
+        font-weight:bold;
+        font-style:none;
+}
+
+
+a {
+        color:navy;
+          font-weight:bold;
+          text-decoration:none;
+}
+
+a:hover {
+        color:#2345E2;
+          font-weight:bold;
+          text-decoration:underline;
+}
+
+table {
+        padding-left: 5;
+        padding-right: 5;
+}
+
+tr.head {
+        font-family:"Verdana";
+        font-size:10;
+        color:#000080;
+        background-color:#FFFFFF;
+        font-weight:bold;
+        text-align:left;
+}
+
+tr.menu {
+        font-size:10;
+}
+
+tr      {
+        font-size:12;
+}
+
+input {
+        font-size:10;        
+}

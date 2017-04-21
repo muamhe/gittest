@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Konsola SQL</title>
+<meta name="generator" content="Bluefish 1.0.7"/>
+<meta name="author" content="kiri"/>
+<meta name="date" content="2008-02-09T12:50:21+0100"/>
+<meta name="copyright" content=""/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+<meta http-equiv="content-style-type" content="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="skrypt"></script>
+<script type="text/javascript">
+<!--
+
+// -->
+</script>
+</head>
+<body>
+<h1>Konfiguracja oprogramowania Server2Go</h1>
+<p>Server2Go można zainstalować na dowolonym dysku, najwygodniej w katalogu głównym, tzn. katalog Server2Go powinien znaleźć się w głównym katalogu dysku, np.: C:\Server2Go</p>
+<p>Plik konfiguracyjny serwera <b>pms_config.ini</b> znajdziemy w katalogu Server2Go na wybranym wcześniej dysku</p>
+<p>Wszystkie opcje są dobrze opisane, ale w j. angielskim. Z przydatniejszych można wymienić:</p>
+<ul>
+	<li><strong>Port=4001</strong> &#8211; określa numer portu, na którym nasłuchuje server Apache; jak widać nie jest to port domyślny dla usługi www (80), a więc w dowolnej przeglądarce, jeżeli chcemy sprawdzić działanie servera, musimy wpisać localhost:4001. Uwaga: Jeżeli chcemy wyświetlić utworzony przez nas serwis/stronę www, musimy wpisać localhost:4001/nasz_serwis, gdzie nasz_serwis określa podkatalog folderu htdocs (patrz niżej).</li>
+	<li><strong>DefaultRoot=htdocs</strong> &#8211; tu określamy ścieżkę do katalogu zawierającego nasze serwisy/strony www, domyślnie jest to katalog względny wobec Server2Go, np.: C:\Server2Go\htdocs\. Możemy go zmienić, jeżeli trzymamy nasze strony w innym miejscu, ale lepszym rozwiązaniem jest umieszczenie ich w domyślnej lokalizacji albo stworzenie dowiązań. Np. jeżeli nasz serwis znajduje się w katalogu D:\serwisy\mojserwis, w lini poleceń wydajemy komendę: junction C:\Server2Go\htdocs\mojserwis D:\serwisy\mojserwis. Uwaga: Program junction musimy wcześniej ściągnąć ze strony <a href="http://www.microsoft.com/technet/sysinternals/FileAndDisk/Junction.mspx">Sysinternals</a> i zainstalować w katalogu systemowym (najczęściej: C:\Windows\System32).<br />Dla wygody możemy umieszczać nasze sewisy w katalogu domyślnym, np.: C:\Server2Go\htdocs. Uwaga: dostęp do naszych serwisów/stron uzyskujemy przez adres: localhost:4001/nasz_serwis, gdzie nasz_serwis określa nazwę podkatalogu folderu htdocs. Np.: jeżeli zdecydowaliśmy się na domyślną lokalizację folderu htdocs (np. C:\Server2Go\htdocs) i pliki naszego serwisu umieściliśmy w podkatalogu C:\Server2Go\htdocs\nasz_serwis, to w polu adresu przeglądarki wpisujemy: localhost:4001\nasz_serwis. Oczywiście w katalogu nasz_serwis musi istnieć plik index.html lub index.php.</li>
+	<li><strong>BrowserType=IEXPLORER</strong> &#8211; określa domyślną przeglądarkę, można np. ustawić FIREFOX. W przypadku problemów z przeglądarką inną od IE, ustawiamy EXTERNAL i w opcji BrowserPath wstawiamy dokładną ścieżkę dostępu do wybranej przeglądarki, np. C:\Program Files\Opera\Opera.exe.</li>
+	<li><strong>LocalMirror=1</strong> &#8211; decysujemy, czy pliki bazy danych MySQL będą kopiowane na dysk twardy. Jeżeli uruchamiamy Server2Go z dysku twardego, a nie z pendrive'a, domyślną opcję zmieniamy na 0.</li>
+	<li><strong>MySQLPort=7188</strong> &#8211; opcja określa numer portu, na którym nasłuchuje MySQL, jak widać nie jest to domyślny port 3306, jeżeli więc będziemy chcieli skorzystać z konsoli MySQL, czyli poleceń mysql lub mysqladmin to musimy podawać dodatkowy parametr: --port 7188. Pamiętajmy, że polecenia mysql i mysqladmin nie są dostępne w systemowej ścieżce wyszukiwania. Jeżeli chcemy z nich skorzystać, musimy wejść do katalogu: C:\Serwer2Go\serwer\mysql lub wpisywać pełną scieżkę w konsoli poleceń.</li>
+</ul>
+<p><a href="index.html">Podstawowe polecenia SQL</a></p>
+</body>
+</html>

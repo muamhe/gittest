@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=BAZA_79
+Exec=thunar ftp://baza79
+Icon=network-server
+Type=Application

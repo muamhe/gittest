@@ -1,0 +1,2 @@
+14
+dwie liczby naturalne ktorych jedynym wspolnym dzielnikiem jest jeden nazywa sie liczbami wzglednie pierwszymi

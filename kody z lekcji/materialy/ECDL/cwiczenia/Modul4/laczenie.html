@@ -1,0 +1,198 @@
+<html><head>
+
+<title>Excel - łączenie i rozdzielanie danych</title>
+<meta name="Robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+
+<meta name="Keywords" content="łączenie,tekstów,funkcje tekstowe,złącz.teksty,konkatenacja,rozdzielanie,tekstu,konwersja tekstu na kolumny,excel,excela,tutoriale,formatowanie,komórki">
+
+<meta name="Description" content="Szczegółowy tutorial opisujący sposoby na łączenie i rozdzielanie danych tekstowych zawartych w kolumnach w Excelu. ">
+
+
+<link rel="stylesheet" href="laczenie_pliki/styl.css" type="text/css">
+
+<script language="JavaScript">
+
+function movepic(img_name,img_src) {
+document[img_name].src=img_src;
+}
+
+</script>
+
+</head><body bgcolor="black" text="black"> <font face="verdana, arial">
+
+
+<table border="0" cellspacing="2" width="100%">
+
+<tbody><tr bgcolor="black">
+
+
+<td width="20%"><a href="http://www.gohha.com/index.html" onmouseover="movepic('menu','../../../napisy/menu2.jpg')" onmouseout="movepic('menu','../../../napisy/menu1.jpg')"> 
+<img name="menu" src="laczenie_pliki/menu1.jpg" alt="menu" id="menu" border="0"></a></td>
+
+
+<td align="right"><a href="http://www.gohha.com/stronka/tutoriale/excel/sumy/sumy.html" onmouseover="movepic('Back','../../../napisy/back2.jpg')" onmouseout="movepic('Back','../../../napisy/back1.jpg')">
+<img name="Back" src="laczenie_pliki/back1.jpg" alt="back" border="0"></a></td>
+
+<td align="left"><a href="http://www.gohha.com/stronka/tutoriale/excel/wielkosci_liter/wielkosci_liter.html" onmouseover="movepic('Next','../../../napisy/next2.jpg')" onmouseout="movepic('Next','../../../napisy/next1.jpg')">
+<img name="Next" src="laczenie_pliki/next1.jpg" alt="next" border="0"></a></td>
+
+
+
+
+</tr>
+
+
+
+<tr>
+
+<td bgcolor="black" valign="top" width="15%">
+
+<a href="http://www.gohha.com/miasto.html" onmouseover="movepic('fotodesign','../../../napisy/fotodesign2.jpg')" onmouseout="movepic('fotodesign','../../../napisy/fotodesign1.jpg')">
+<img name="fotodesign" src="laczenie_pliki/fotodesign1.jpg" alt="fotodesign" border="0"></a>
+
+<br>			   
+
+<a href="http://www.gohha.com/reklama.html" onmouseover="movepic('grafika','../../../napisy/grafika2.jpg')" onmouseout="movepic('grafika','../../../napisy/grafika1.jpg')">
+<img name="grafika" src="laczenie_pliki/grafika1.jpg" alt="grafika" border="0"></a>
+
+
+
+
+<br>			   
+<a href="http://www.gohha.com/tutorials.html" onmouseover="movepic('tutorials','../../../napisy/tutorials2.jpg')" onmouseout="movepic('tutorials','../../../napisy/tutorials1.jpg')">
+<img name="tutorials" src="laczenie_pliki/tutorials1.jpg" alt="tutorials" border="0"></a>
+
+
+
+
+<br>			   
+<a href="http://www.gohha.com/ksiega/ksiega.php" onmouseover="movepic('guestbook','../../../napisy/guestbook2.jpg')" onmouseout="movepic('guestbook','../../../napisy/guestbook1.jpg')">
+<img name="guestbook" src="laczenie_pliki/guestbook1.jpg" alt="guestbooks" border="0"></a>
+	
+
+<br>
+			
+<a href="http://www.gohha.com/o_mnie.html" onmouseover="movepic('o_mnie','../../../../stronka/napisy/o_mnie2.jpg')" onmouseout="movepic('o_mnie','../../../../stronka/napisy/o_mnie1.jpg')" class="nie">
+<img name="o_mnie" src="laczenie_pliki/o_mnie1.jpg" alt="o_mnie" border="0"></a>
+
+<center><br>
+
+<script language="javascript" type="text/javascript">
+<!--
+document.write('<a href="javascript:window.print(self)" class="print" accesskey="p"><img src="../../print.gif" class="pdf"></a>');
+// -->
+</script><a href="javascript:window.print(self)" class="print" accesskey="p"><img src="laczenie_pliki/print.gif" class="pdf"></a></center>
+
+
+
+<br>
+
+<div class="promocja nie">
+
+<script src="laczenie_pliki/ksiazkasm.htm">
+</script><p class="helion-ksiazkasm1"><a href="http://helion.pl/view/2975M/ex2722.htm" target="helionpl"><img src="laczenie_pliki/ex2722.jpg" alt="Excel 2007 PL. 222 gotowe rozwiązania" border="0" width="90" height="119"></a></p><p class="helion-ksiazkasm2"><b>Excel 2007 PL. 222 gotowe rozwiązania</b><br><b>Krzysztof Masłowski</b></p><p class="helion-ksiazkasm3">Cena: 39.00 zł</p><p class="helion-ksiazkasm4"><a href="http://helion.pl/add2975M%7Eex2722" target="helionpl">dodaj do koszyka</a><a><br></a><a href="http://helion.pl/view/2975M/ex2722.htm" target="helionpl">zobacz opis</a><a></a></p>
+
+</div>
+</td>
+
+
+<td colspan="2" style="font-size: 12px;" bgcolor="white">
+
+<div style="margin: 20px;">
+
+<p style="font-size: 18px; font-weight: 600;">Łączenie i rozdzielanie danych tekstowych</p>
+<p style="font-size: 17px; font-weight: 600;"></p>
+<p align="justify"></p>
+
+<p align="justify">W tym tutorialu opiszę metody na łączenie danych tekstowych z różnych komórek za pomocą funkcji <b>Złącz.teksty</b> oraz metodą <b>konkatenacji </b>. W drugiej części tutoriala przedstawię metodę na działanie odwrotne - czyli <b>konwersję danych</b> wpisanych do jednej komórki na kilka kolumn.</p>
+
+<p align="justify"></p>
+
+
+<p style="font-size: 18px; font-weight: 600;">Łączenie tekstów. Metoda 1.</p>
+
+<p align="justify">Dane wpisane do kolumn <b>Imię</b> i <b>Nazwisko</b> można połączyć za pomocą funkcji tekstowej <b>Złącz.Teksty</b>.</p>
+
+<img src="laczenie_pliki/laczenie_obrazek1.jpg">
+
+<p align="justify">W komórce <b>C2</b> należy wywołac z menu <b>Wstaw | Funkcja</b>. Następnie z kategorii <b>Tekstowe</b> wybrać funkcję <b>Złącz.Teksty</b>.</p>
+
+
+<img src="laczenie_pliki/laczenie_obrazek2.jpg">
+
+<p align="justify">W polach <b>Tekst1</b> oraz <b>Tekst3</b> wskazujemy komórki z tekstami (czyli Imię oraz Nazwisko), natomiast aby uniknąć "sklejenia" połączonych wyrazów w pole <b>Tekst2</b> należy wpisać <b>spację w cudzysłowie</b>.</p>
+
+
+<img src="laczenie_pliki/laczenie_obrazek3.jpg">
+
+<p align="justify">Po zatwierdzeniu okna funkcji dane w arkuszu zostają połączone. Dzięki zastosowanej spacji dane są czytelne.</p>
+<img src="laczenie_pliki/laczenie_obrazek4.jpg">
+
+
+
+<p style="font-size: 18px; font-weight: 600;">Łączenie tekstów. Metoda 2.</p>
+<p align="justify">Alternatywna metoda łączenia tekstów wykorzystuje właściwości <b>konkatenacji</b> zastosowane w formule.<br>Przykład takiej formuły podany jest na poniższej ilustracji.</p>
+
+<p align="justify"></p>
+
+<p align="justify">Efekt działania formuły jest taki sam jak w przypadku funkcji <b>Złącz.Teksty</b> dzięki dodatkowej spacji umieszczonej w formule.</p>
+<p align="justify"></p>
+<img src="laczenie_pliki/laczenie_obrazek5.jpg">
+
+<p align="justify"></p>
+
+
+<p style="font-size: 18px; font-weight: 600;">Konwersja tekstu na kolumny </p>
+
+<p align="justify">W sytuacji odwrotnej, czyli gdy w jednej kolumnie 
+wpisane są dane typu imię i nazwisko, można zastosować rozdzielenie 
+tekstów na osobne kolumny.</p>
+
+<img src="laczenie_pliki/laczenie_obrazek6.jpg">
+
+<p align="justify">Najpierw należy zaznaczyć komórki z tekstem, a 
+następnie uruchomić kreatora konwersji tekstu na kolumny za pomocą 
+polecenia w menu <b>Dane | Tekst jako kolumny...</b></p>
+
+<img src="laczenie_pliki/laczenie_obrazek7.jpg">
+
+<p align="justify">W kroku 1 zaznaczamy opcję <b>Rozdzielany</b>.</p>
+
+<img src="laczenie_pliki/laczenie_obrazek8.jpg">
+<p align="justify">W kroku 2 zaznaczamy <b>typ znaku</b> jaki rozdziela poszczególne wyrazy. W tym przypadku jest to <b>spacja</b>.</p>
+
+<img src="laczenie_pliki/laczenie_obrazek9.jpg">
+<p align="justify">W kroku 3 można określić do poszczególnych kolumn tekstu <b>format danych</b>. Ja w obu kolumnach zaznaczyłam format <b>Tekstowy</b>. Ponadto na tym etapie należy podać <b>Miejsce docelowe</b>, czyli adres pierwszej komórki zakresu, do którego Excel będzie wklejał rozdzielone dane.</p>
+
+
+<img src="laczenie_pliki/laczenie_obrazek10.jpg">
+
+<p align="justify">Po zakończeniu konwersji dane są rozdzielone i wpisane do osobnych kolumn.</p>
+
+<img src="laczenie_pliki/laczenie_obrazek11.jpg">
+
+
+
+<br><a href="#menu">&#8593; Do góry &#8593;</a><br>
+
+</div>
+
+</td>
+
+<td width="15%"> ...
+</td>
+</tr>
+
+</tbody></table>
+
+
+
+
+<script src="laczenie_pliki/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-917301-1";
+urchinTracker();
+</script>
+</font></body></html>

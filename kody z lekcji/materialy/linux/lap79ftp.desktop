@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=LAP_79
+Exec=thunar ftp://lap79
+Icon=network-server
+Type=Application
