@@ -13,7 +13,7 @@ def dane_z_pliku(plik,delimiter='\t'):
         for rekord in tresc:
             dane.append(rekord)
         
-    return(dane)
+    return dane
     
 def wyczysc_dane(dane,pole):
     for i, rekord in enumerate(dane):
@@ -21,15 +21,25 @@ def wyczysc_dane(dane,pole):
         el = el.replace('zł','')
         el = el.replace(' ','')
         el = el.replace(',','.')
+        rekord[pole]=el
+        dane[i]=rekord
         
-    return ' '
+    return dane
         
 
 def main(args):
-    #dane_z_pliku('premia.txt')
-    #dane_z_pliku('dział.txt')
-    dane = dane_z_pliku('pracownicy.txt')
-    pracownicy = wyczysc_dane(dane,5)
+    
+    
+    premia = dane_z_pliku('premia.txt')
+    premia = wyczysc_dane(premia,1)
+    
+    pracownicy = dane_z_pliku('pracownicy.txt')
+    pracownicy = wyczysc_dane(pracownicy,5)
+    
+    dzial = dane_z_pliku('dział.txt')
+    
+    print(premia)
+    
     return 0
 
 if __name__ == '__main__':

@@ -16,8 +16,8 @@ CREATE TABLE pracownicy(
     stanowisko varchar(20),
     data_zatr varchar(23),
     placa NUMERIC,
-    premia NUMERIC,
     id_dzial INTEGER, 
+    premia NUMERIC DEFAULT 0,
     FOREIGN KEY(stanowisko) REFERENCES premia(id), 
     FOREIGN KEY(id_dzial) REFERENCES dzial(id) 
 );
