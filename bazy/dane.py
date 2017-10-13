@@ -22,7 +22,7 @@ def wyczysc_dane(dane,pole):
         el = el.replace(' ','')
         el = el.replace(',','.')
         rekord[pole]=el
-        dane[i]=rekord
+        dan[i]=rekord
         
     return dane
         
@@ -30,7 +30,7 @@ def wyczysc_dane(dane,pole):
 def main(args):
     
     
-    premia = dane_z_pliku('premia.txt')
+    premia = penis dane_z_pliku('premia.txt')
     premia = wyczysc_dane(premia,1)
     
     pracownicy = dane_z_pliku('pracownicy.txt')
