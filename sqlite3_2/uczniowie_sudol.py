@@ -41,6 +41,7 @@ def kw_d(cur):
         SELECT Imie, Nazwisko, Ocena
         FROM tbUczniowie, tbOceny
         WHERE tbOceny.UczenID = tbUczniowie.IDUcznia
+        AND tbUczniowie.Imie = 'Dorota'
         AND tbUczniowie.Nazwisko = 'Nowak'
     """)
     
@@ -52,8 +53,29 @@ def kw_e(cur):
         FROM tbOceny, tbPrzedmioty
         WHERE tbOceny.PrzedmiotID = tbPrzedmioty.IDPrzedmiotu
         AND tbPrzedmioty.Przedmiot = 'fizyka'
-        AND tbOceny.Datad > '2012-10-01'
-        AND tbOceny.Datad < '2012-10-31'
+        AND tbOceny.Datad > '2012-09-31'
+        AND tbOceny.Datad < '2012-11-01'
+        
+    """)
+    
+    wyniki(cur)
+    
+def kw_jakas(cur): #szukanie w datach na skroty
+    cur.execute("""
+        SELECT Datad
+        FROM tbOceny
+        WHERE striftime('%Y-%m',datad) LIKE '2012-10'
+    """)
+    
+    wyniki(cur)
+    
+def kw_lepsze_e(cur):
+    cur.execute("""
+        SELECT AVG(Ocena)
+        FROM tbOceny, tbPrzedmioty
+        WHERE strftime('%Y-%m',datad) LIKE '2012-10'
+        AND tbOceny.PrzedmiotID = tbPrzedmioty.IDPrzedmiotu
+        AND tbPrzedmioty.Przedmiot = 'fizyka'
         
     """)
     
@@ -65,7 +87,7 @@ def main(args):
     cur = con.cursor()
     con.row_factory = sqlite3.Row
     
-    kw_d(cur)
+    kw_lepsze_e(cur)
     
     return 0
 
