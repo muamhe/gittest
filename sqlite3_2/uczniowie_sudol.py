@@ -47,29 +47,8 @@ def kw_d(cur):
     
     wyniki(cur)
     
-def kw_e(cur):
-    cur.execute("""
-        SELECT AVG(tbOceny.Ocena)
-        FROM tbOceny, tbPrzedmioty
-        WHERE tbOceny.PrzedmiotID = tbPrzedmioty.IDPrzedmiotu
-        AND tbPrzedmioty.Przedmiot = 'fizyka'
-        AND tbOceny.Datad > '2012-09-31'
-        AND tbOceny.Datad < '2012-11-01'
-        
-    """)
     
-    wyniki(cur)
-    
-def kw_jakas(cur): #szukanie w datach na skroty
-    cur.execute("""
-        SELECT Datad
-        FROM tbOceny
-        WHERE striftime('%Y-%m',datad) LIKE '2012-10'
-    """)
-    
-    wyniki(cur)
-    
-def kw_lepsze_e(cur):
+def e(cur):
     cur.execute("""
         SELECT AVG(Ocena)
         FROM tbOceny, tbPrzedmioty
@@ -81,13 +60,47 @@ def kw_lepsze_e(cur):
     
     wyniki(cur)
 
+def dodaj(cur):
+    cur.execute("""
+        INSERT INTO tbKlasy
+        VALUES (?,?,?,?)
+    """, [None, '3C', 2015, 2018])
+    
+def aktualizuj(cur):
+    cur.execute("""
+        UPDATE tbKlasy
+        SET klasa = ?
+        WHERE IDKlasy = ?
+    """, ['3D',13])
+
+def usun(cur):
+    cur.execute('DELETE FROM tbKlasy WHERE klasa = ? AND RokNaboru = ?', ['3B',2015] )
+       
+def zmien(cur):
+    cur.execute("""
+        UPDATE tbUczniowie
+        SET EgzJez= ?
+        WHERE Imie = ?
+        AND Nazwisko = ?
+    """, [35,'Paulina', 'Dziedzic'])
+    
+#def popraw(cur):
+ 
+    
+
 def main(args):
     
     con = sqlite3.connect('szkola.db')
     cur = con.cursor()
     con.row_factory = sqlite3.Row
     
-    kw_lepsze_e(cur)
+    #dodaj(cur)
+    #aktualizuj(cur)
+    #usun(cur)
+    zmien(cur)
+    con.commit()
+    wyniki(cur.execute('SELECT * FROM tbUczniowie  '))
+    #wyniki(cur.execute('SELECT * FROM tbKlasy'))
     
     return 0
 
