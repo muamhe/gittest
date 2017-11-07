@@ -27,7 +27,7 @@ class Pracownik(BazaModel):
     nazwisko = CharField(null=False)
     imie = CharField(null=False)
     stanowisko = ForeignKeyField(Premia, related_name='pracownicy')
-    data_zatr = CharField(null=False)
+    data_zatr = DateField(null=False)
     placa = DecimalField(decimal_places=2)
     premia = DecimalField(decimal_places=2, default=0)
     id_dzial = ForeignKeyField(Dzial, related_name='pracownicy')
@@ -64,6 +64,52 @@ def kwerenda_e():
             )
 
     for obj in query:
-        print(obj.imie, obj.nazwisko, obj.stanowisko.id)
+        print(obj.imie, obj.nazwisko, obj.stanowisko.id, obj.placa*obj.stanowisko.premia)
 
-kwerenda_e()
+
+def kwerenda_f():
+    query = (Pracownik
+            .select(fn.Avg(Pracownik.placa).alias('srednia'))
+            .group_by(Pracownik.imie.endswith('a'))
+            )
+
+    for obj in query:
+        print(obj.srednia)
+
+
+def kwerenda_g():
+    from datetime import datetime
+    query = (Pracownik
+            .select(Pracownik.imie, Pracownik.nazwisko, Pracownik.stanowisko, Pracownik.data_zatr.year.alias('rok'))
+            .join(Premia)
+            )
+
+    for obj in query:
+        print(obj.imie, obj.nazwisko, obj.stanowisko.id, datetime.now().year - int(obj.rok))
+
+
+def kwerenda_h():
+    """wybiera imie nazwisko stanopwsiko siedzibe"""
+
+    query = (Pracownik
+            .select()
+            .join(Premia)
+            )
+
+    for obj in query:
+        print(obj.imie, obj.nazwisko, obj.stanowisko.id, obj.id_dzial.siedziba)
+
+
+def kwerenda_i():
+    """kwerenda liczy liczbe pracownikow zatrudnionych w danym dziale"""
+
+    query = (Pracownik
+            .select(fn.count(Pracownik.id).alias('ilu'))
+            .join(Dzial)
+            .group_by(Dzial.siedziba)
+            )
+
+    for obj in query:
+        print(obj.siedziba, obj.ilu)
+
+kwerenda_i()
