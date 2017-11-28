@@ -32,6 +32,11 @@ def formularz():
     dane=[imie,nazwisko,wiek]
     return render_template('formularz.html', dane=dane)
 
+@app.route('/todo', methods=['GET','POST'] )
+def todo():
+    form = TodoForm()
+    return render_template('todo.html', form = form)
+
 @app.route('/quiz')
 def quiz():
     """Wyświetlenie pytań i odpowiedzi w formie quizu oraz ocena poprawności
@@ -83,7 +88,7 @@ def dodaj():
         flash_errors(form)
 
     return render_template("dodaj.html", form=form, radio=list(form.odpok))
-    
+
 def get_or_404(pid):
     """Pobranie i zwrócenie obiektu z bazy lub wywołanie szablonu 404.html"""
     try:
@@ -124,7 +129,7 @@ def edytuj(pid):
             break
     form = DodajForm(obj=p)
     return render_template("edytuj.html", form=form, radio=list(form.odpok))
-    
+
 @app.route('/usun/<int:pid>', methods=['GET', 'POST'])
 def usun(pid):
     """Usunięcie pytania o identyfikatorze pid"""
