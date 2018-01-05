@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <fstream>
 
 using namespace std;
 
@@ -47,6 +48,17 @@ void getOsoby(osoba t[], int ile){
     }
     }
     
+void zapiszDane(osoba t[], int ile){
+    ofstream plik("osoby.txt", ios::app);
+    if (!plik.is_open()){
+        cout << "Błąd otwarcia pliku!";
+        }else{ for(int i=0; i < ile; i++){
+            cout << t[i].imie << ", " << t[i].nazwisko << ", " << t[i].wiek << endl;
+            plik << t[i].imie << ", " << t[i].nazwisko << ", " << t[i].wiek << endl;
+            } 
+        }
+}
+    
 void drukujOsoby(osoba t[], int ile){
     for(int i=0; i < ile; i++){
         cout << "Imie : ";
@@ -57,6 +69,23 @@ void drukujOsoby(osoba t[], int ile){
         cout << t[i].wiek << ", ";
         cout << endl;
     }
+    }
+    
+int czytajDane(osoba t[]){
+    ifstream plik("osoby.txt");
+    string linia;
+    int i = 0;
+    
+    if (plik.is_open()){
+        while(getline(plik, linia)){
+           cout << linia << endl;
+           i++; //liczymy odczytane rekordy
+           } 
+        }else {
+            cout << "Błąd otwarcia pliku!";
+            }
+            
+    return i;
     }
 
 int main(int argc, char **argv)
@@ -86,8 +115,10 @@ int main(int argc, char **argv)
     cin >> ile;
     
     osoba tb[ile];
-    getOsoby(tb, ile);
-    drukujOsoby(tb, ile);
+    //getOsoby(tb, ile);
+    //drukujOsoby(tb, ile);
+    //zapiszDane(tb, ile);
+    cout << czytajDane(tb) << endl;
     
 	
 	return 0;
