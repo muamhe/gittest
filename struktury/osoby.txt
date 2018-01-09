@@ -1,3 +1,2 @@
-Kamel, Sudo, 18
-Krzychu, Golonka, 13
-Magda, Gessler, 150
+kakmel,kaaakmel,12
+LOOl,1,dwanascie
