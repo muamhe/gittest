@@ -11,48 +11,6 @@ using namespace std;
  
 
  
-class Ulamek {
-    int licznik;  //deklaracja skladowej wlasciwosci
-    int mianownik; // sa to deklaracje prywatne
-public:
-    Ulamek(int, int); // deklaracja konstruktora
-    void zapisz(int, int); //deklaracja metody
-    void wypisz(){
-        cout << licznik << "/" << mianownik << endl;
-        }
-    int get_l(){
-        return licznik;
-        }
-    int get_m(){
-        return mianownik;
-        }
-    void skracaj(); // metoda drukuje skrocona postac ulamka(algorytm euklidesa)
-};
-
-
-
-void Ulamek::zapisz(int l, int m){
-    licznik = l;
-    if (m != 0) mianownik = m;
-    else{
-        cout << "Mianownik nie moze byc zerem!";
-        exit(1);
-        }
-    }
-    
-    
-Ulamek::Ulamek(int l, int m){
-    licznik = l;
-    if (m != 0) mianownik = m;
-    else{
-        cout << "Mianownik nie moze byc zerem!";
-        exit(1);
-        }
-    }
-    
-void Ulamek::skracaj(){
-    ; //wykorzystaj algorytm euklidesa optymalny
-    }
 
 int main(int argc, char **argv)
 {
