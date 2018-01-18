@@ -44,14 +44,12 @@ void wypelnij2W(int **tab, int w, int k){
     srand(time(NULL)); //inicjacja generatora liczb pseudolosowych
     for(int i = 0; i < w; i++){
         for(int j = 0; j < k; j++){
-            tab[i][j] = rand() % 10; 
-            cout << setw(4) << tab[i][j];
-            }
-            cout << endl;
+            tab[i][j] = (i+1) * (j+1);
+            cout << setw(4) << tab [i][j];
         }
-    
-    
+        cout << endl;
     }
+}
 
 
 int tab2W(){
