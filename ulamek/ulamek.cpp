@@ -26,6 +26,7 @@ public:
     int get_m(){
         return mianownik;
         }
+    void skracaj(int, int);
 };
 
 
@@ -49,6 +50,22 @@ Ulamek::Ulamek(int l, int m){
         }
     }
     
+void Ulamek::skracaj(int l, int m){
+    int a = l;
+    int b = m;
+    
+    do{
+    	if(a > b) a = a - b; 
+    		else b = b - a;
+	} 
+	while (a != b);
+	
+	cout << "Ulamek po skroceniu: " << l/a << "/" << m/a << endl;
+
+
+	 //wykorzystaj algorytm euklidesa optymalny
+    }
+    
 
 
 int main(int argc, char **argv)
@@ -63,15 +80,17 @@ int main(int argc, char **argv)
     cout << "Ulamek2: " << endl;
     u2.wypisz();
     
-    u1.zapisz(7, 9);
-    cout << "Licznik: "<< u1.get_l() << endl;
-    cout << "Mianownik: "<< u1.get_m() << endl;
+    u1.skracaj(3453,456);
     
-    Ulamek u3(u1.get_l(), u1.get_m());
-    u3.wypisz();
+    //u1.zapisz(7, 9);
+    //cout << "Licznik: "<< u1.get_l() << endl;
+    //cout << "Mianownik: "<< u1.get_m() << endl;
+    
+    //Ulamek u3(u1.get_l(), u1.get_m());
+    //u3.wypisz();
     
     
 	
-	return 0;
+	system("pause");
 }
 
