@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-25T12:00:07+01:00
+
+====== struktury danych ======
+Created czwartek 25 styczeń 2018
+
+sa zaawansowanymmi pojembnikami na dane ktore fromaxdza je ukladaja w odpowedni sposob
+
+podstawowe struktury  danych
+-lista
+-kolejka
+-graf
+-drzewo
+-kopiec
+-stos
+
+stos jest struktura liniowo uporzadkowanych danych z ktorych jedynie ostatnie elemet zwany wierzcholkiem jest w danym momencie dostepny
+
+architektura lifo (last in first out)
+
+funkcje
+push() dodaje element na szycie stosu
+pop() usuwa element
+
+
+kolejka to liniowa struktura danych w ktorej element ktory zostal wstawiony do kolejki jaki pierwszy, jakoi pierwszy jest z niej popierany 
+
+architektura fifo
+
+glowa kolejki pierwszy element w kolejce
+ogon kolejki pierwsze wolne miesjce w kolejce 
+ 
+
+lista to struktura sanych sluzaca do przechowywania nieznanej z gory ilosci informacji tego samego typu
+
+sklada sie ona z wezlow ktore zawieraja dane przechowywane w liscie oraz wskaznik do kolejnego (a wp rzypadku listy swukierunkowej takze do poprzedniego) elementu
+
+
+
+dzwerzo binarne jest hierarchicznia struktura danych ktorego elelmenty nazywa sie weslami lub wierzcholkami w
+
+w drzewwie binarnym kazdy wezel posaida co najwyzej dwa nasepniki stad jego nazwa. nastepniki te nazywamy potomkami, dziecmi lub wezlami potomnymidanego wezla
+
+metoda dziel i zwyciezaj 
+
+wszystkie elementy zznajdujace sie w lewym poddrzewie sa mniejsze od wojego ojca natomiast elementy prawego poddrzewa sa wieksze od ojca, regula ta obowiazuje wszystkie poddrzewa
