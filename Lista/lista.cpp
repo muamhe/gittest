@@ -26,14 +26,14 @@ void Lista::Dodaj(int a) {
     el -> wartosc = a;
     el -> wskaznik = NULL;
     
-    if (head == NULL){ // dodanie piierwszego elementu listy
+    if (head == NULL){ // dodanie pierwszego elementu listy
         head = el;
         tail = el;
         i = 1;
     } else {
         tail -> wskaznik = el;      // ustawienie wksaznika nast dotychczasowego
         // ostatniego elementu na adres nowego ostatniego elementu
-        tail = el; // aktualizujemy wslazmol ogon aby wkazywal na nowy dodany element
+        tail = el; 
         i++;
     }
 }
