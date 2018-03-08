@@ -33,9 +33,14 @@ class Robot:
             return['attack', lista_wrogow_obok[0]]
         print(game.robots)
 
-        if self.location == rg.CENTER_POINT:
-            return ['guard']
-        if czy_wejscie(self.poz):
+        #if self.location == rg.CENTER_POINT:
+            #return ['guard']
+
+        dystansCP = rg.wdist(self.location, rg.CENTER_POINT)
+
+        if dystansCP > 6:
+        #if czy_wejscie(self.poz):
         # idź do środka planszy, ruch domyślny
             return ['move', rg.toward(self.location, rg.CENTER_POINT)] # rg.toward najkrotsza odleglosc
+        return ['guard']
 
